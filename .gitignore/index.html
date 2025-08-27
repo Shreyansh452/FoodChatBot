@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pandeyji Eatery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff9c4; /* light yellow */
+      padding: 30px 15px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: #f44336; /* red */
+      color: white;
+      padding: 15px 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 4px solid #ffc107; /* bold yellow */
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-bottom: 3px solid #ffc107;
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+      background-color: #fffde7; /* lightest yellow */
+    }
+
+    .card-body h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #d32f2f;
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ff5722;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2.2rem;
+        padding: 10px 20px;
+      }
+
+      .card img {
+        height: 180px;
+      }
+
+      .card-body h3 {
+        font-size: 1.3rem;
+      }
+
+      .card-body p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Pandeyji Eatery</h1>
+  </header>
+
+  <section class="menu">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?pav-bhaji" alt="Pav Bhaji" />
+      <div class="card-body">
+        <h3>Pav Bhaji</h3>
+        <p>$6</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="front_end/chole.jpg" alt="Chole Bhature" />
+      <div class="card-body">
+        <h3>Chole Bhature</h3>
+        <p>$7</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="front_end/pizza.jpg" alt="Pizza" />
+      <div class="card-body">
+        <h3>Pizza</h3>
+        <p>$8</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?mango-lassi" alt="Mango Lassi" />
+      <div class="card-body">
+        <h3>Mango Lassi</h3>
+        <p>$5</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?masala-dosa" alt="Masala Dosa" />
+      <div class="card-body">
+        <h3>Masala Dosa</h3>
+        <p>$6</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?biryani" alt="Vegetable Biryani" />
+      <div class="card-body">
+        <h3>Vegetable Biryani</h3>
+        <p>$9</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?vada-pav" alt="Vada Pav" />
+      <div class="card-body">
+        <h3>Vada Pav</h3>
+        <p>$4</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?rava-dosa" alt="Rava Dosa" />
+      <div class="card-body">
+        <h3>Rava Dosa</h3>
+        <p>$7</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?samosa" alt="Samosa" />
+      <div class="card-body">
+        <h3>Samosa</h3>
+        <p>$5</p>
+      </div>
+    </div>
+  </section>
+
+  <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/fb14df4b-8fd1-45fa-94d5-42b8572d0556"></iframe>
+
+</body>
+</html>
