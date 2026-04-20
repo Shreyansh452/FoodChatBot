@@ -1,21 +1,46 @@
-FoodChatBot 🍔
+# 🍔 FoodChatBot
 
-A food ordering chatbot that can perform basic operations like taking orders, providing food status, and managing customer requests.
-Features
+A FastAPI-based food ordering chatbot backend that integrates with Dialogflow to process natural language food orders.
 
-    🛒 Order Management: Take food orders from customers
-    📦 Order Status: Provide real-time updates on order status
-    🎯 Basic Operations: Handle common customer queries
-    💬 Conversational Interface: Natural language processing for user interactions
+---
 
-Tech Stack
+## 🎯 Project Purpose
 
-    Language: Python (98.1%)
-    Build: Cython (1.9%)
+This chatbot enables users to:
 
-Installation
+- 🛒 Place orders (add items to cart)
+- ✏️ Modify orders (remove or update items)
+- ✅ Complete orders (finalize and store in database)
+- 📦 Track order status
 
-    Clone the repository:
+---
 
-git clone https://github.com/Shreyansh452/FoodChatBot.git
+## 🏗️ Architecture Overview
+
+### 1. FastAPI Web Server
+- Handles HTTP requests from Dialogflow webhook
+- Processes user intents in real time
+- Exposes REST API endpoints
+
+---
+
+### 2. Session Management
+
+```python
+# Stores active orders per user session
+inprogress_orders = {
+    "session_id_1": {"burger": 2, "pizza": 1},
+    "session_id_2": {"pasta": 1}
+}
+
+# Clone repository
+git clone https://github.com/your-username/FoodChatBot.git
+
+# Navigate to project
 cd FoodChatBot
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run server
+uvicorn main:app --reload
